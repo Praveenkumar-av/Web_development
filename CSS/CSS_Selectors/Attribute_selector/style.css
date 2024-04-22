@@ -1,0 +1,40 @@
+/* Attribute selector in CSS
+ * This CSS attribute selector targets elements based on the presence or value of a specified attribute.
+ * 
+ * Syntax:
+ * [attribute] - Selects elements that have the specified attribute, regardless of its value.
+ * [attribute=value] - Selects elements that have the specified attribute with a value exactly equal to the specified value.
+ * [attribute~=value] - Selects elements that have the specified attribute with a value containing a specific word.
+ * [attribute|=value] - Selects elements that have the specified attribute with a value starting with the specified value, followed by a hyphen.
+ * [attribute^=value] - Selects elements that have the specified attribute with a value starting with the specified value.
+ * [attribute$=value] - Selects elements that have the specified attribute with a value ending with the specified value.
+ * [attribute*=value] - Selects elements that have the specified attribute with a value containing the specified value.
+ * 
+ * Example:
+ * 
+ * HTML:
+ * <a href="https://example.com">Link</a>
+ * <input type="text" required>
+ * 
+ * CSS:
+ * a[href] {
+ *   color: blue;
+ * }
+ * 
+ * input[type="text"] {
+ *   border: 1px solid black;
+ * }
+ * 
+ * The first CSS rule selects the <a> element with the href attribute and applies a blue color to it.
+ * The second CSS rule selects the <input> element with the type attribute set to "text" and applies a black border to it.
+ */
+
+p[draggable] {
+    /* selects all the paragraph element with draggable attribute */
+    color :brown;
+}
+
+p[draggable="false"] {
+    /* selects all the paragraph elements with draggable attribute set to false */
+    color :green;
+}

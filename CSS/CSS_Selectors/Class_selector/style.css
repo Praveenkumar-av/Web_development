@@ -1,0 +1,15 @@
+/* Represents a class selector in CSS.
+ *
+ * Class selectors are used to select elements based on their class attribute.
+ * They are denoted by a period (.) followed by the class name.
+ *
+ * Example usage:
+ * .my-class {
+ *   color: red;
+ *   font-size: 16px;
+ * }
+ */
+
+.green-text {
+    color :green;
+}

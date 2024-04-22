@@ -1,0 +1,16 @@
+/*
+ * This CSS code uses the ID selector to target an element with a specific ID.
+ * The ID selector is denoted by the '#' symbol followed by the ID name.
+ * It is used to select and apply styles to a single element on the page that has a matching ID attribute.
+ * IDs should be unique within a document, meaning that only one element should have a particular ID.
+ * This selector has a higher specificity compared to class selectors or element selectors.
+ * To use the ID selector, simply replace 'elementID' with the actual ID of the element you want to target.
+Eg :
+    #elementID {
+        CSS styles for the element with the specified ID
+    }
+*/
+
+#main {
+    color :orange;
+}

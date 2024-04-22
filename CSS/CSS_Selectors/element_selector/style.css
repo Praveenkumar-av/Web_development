@@ -1,0 +1,8 @@
+ /* element selector or type selector in CSS
+ * This CSS selector targets all elements of a specific type on a web page.
+ * It is denoted by the element name without any additional qualifiers or attributes.
+ * For example, the selector 'p' will target all <p> elements on the page. */
+
+h1 {
+    color: red;
+}
