@@ -1,0 +1,24 @@
+/* Group combinator - comma separated */
+h1, h2 {
+    color: blue;
+}
+
+/* child combinator - direct children*/
+.box > p {
+    color: firebrick;
+}
+
+/* descedent combinator - all descendents*/
+.box li {
+    color: blue;
+}
+
+/* chaining combinator */
+li.done {
+    color: seagreen;
+}
+
+/* combining combinator */
+ul p.done {
+    font-size: 0.5rem;
+}
