@@ -1,0 +1,32 @@
+<!-- Static Positioning example 
+
+    Static positioning is the default positioning for HTML elements in CSS. 
+When an element is positioned statically, it is placed in the normal document flow, 
+meaning it will appear in the order it is written in the HTML and will not be affected 
+by the top, right, bottom, or left properties. Static positioning does not allow for 
+any manual adjustments to the element's position on the page.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Positioning example</title>
+    <style>
+        .box {
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            position: static;  /* Default position  */
+            left: 200px;  /* This property will not work */
+            top: 200px;     /* This property will not work */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

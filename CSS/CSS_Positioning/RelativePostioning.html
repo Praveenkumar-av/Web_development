@@ -1,0 +1,43 @@
+<!-- Relative Positioning example 
+
+    Relative positioning in CSS allows you to position an element relative to its 
+normal position in the document flow. When an element is positioned relatively, 
+it can be moved from its original position using the top, right, bottom, and left properties. 
+However, the space originally occupied by the element is still preserved in the layout, 
+meaning other elements will not shift to fill the gap.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Positioning example</title>
+    <style>
+        .box1 {
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            position: static;
+        }
+        .box2 {
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            position: relative;  /* relative to the original position of box1*/
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+    </div> 
+
+    <div class="box2">
+    </div>
+</body>
+
+</html>

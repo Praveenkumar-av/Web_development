@@ -1,0 +1,50 @@
+<!-- Relative Positioning example -->
+
+    <!-- 
+    Absolute positioning in CSS allows you to place an element exactly where you want it on the page. 
+When an element is given `position: absolute;`, it is removed from the normal document flow and 
+positioned relative to its closest positioned ancestor (an ancestor with a position other than 
+`static`). If no such ancestor exists, it is positioned relative to the initial containing block 
+(usually the viewport). You can use the `top`, `right`, `bottom`, and `left` properties to specify 
+the exact position of the element.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Positioning example</title>
+    <style>
+        .box1 {
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+
+        .box2 {
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            z-index: -1;  
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+ 
+        <div class="box2">
+        </div>
+
+    </div> 
+</body>
+
+</html>
